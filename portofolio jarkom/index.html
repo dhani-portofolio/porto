@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Rahmad Dhani Widi Anggoro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .frame {
+      border: 2px solid black;
+      padding: 30px;
+      margin: 20px;
+      min-height: 95vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .intro-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .hero-img {
+      width: 90px; /* 3 cm */
+      height: 120px; /* 4 cm */
+      object-fit: cover;
+      border: 2px solid black;
+      border-radius: 4px;
+    }
+
+    .nama {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .hero-text {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    section {
+      margin-top: 40px;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .project {
+      width: 200px;
+      text-align: center;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    input, textarea {
+      padding: 8px;
+      font-size: 1em;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    .sosmed p {
+      margin: 5px 0;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <!-- Header & Navigasi -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang Saya</a></li>
+          <li><a href="#karya">Karya</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Beranda -->
+    <section id="beranda" class="hero">
+      <div class="intro-container">
+        <img src="img/profil.jpg" alt="Foto 3x4" class="hero-img">
+        <div class="nama">Rahmad Dhani Widi Anggoro</div>
+      </div>
+      <div class="hero-text">
+        <h1>Hai, aku Rahmad Dhani Widi Anggoro</h1>
+        <h3>Senang banget bisa berbagi karya-karyaku di sini</h3>
+      </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="about">
+      <h2>Tentang Saya</h2>
+      <p>Aku mahasiswa Teknik Komputer yang tertarik pada dunia pemrograman web. Dunia coding menurutku seperti seni yang bisa hidup—setiap baris kode punya cerita.</p>
+      <p>Saat ini aku sedang fokus mempelajari HTML, CSS, dan dasar-dasar JavaScript. Aku juga suka eksperimen dengan desain dan layout agar tampilan website jadi menarik dan nyaman digunakan.</p>
+      <p>Ke depannya, aku ingin mengembangkan kemampuan di bidang fullstack development dan membangun aplikasi web yang bermanfaat.</p>
+
+      <h3>Keahlian:</h3>
+      <ul>
+        <li>Membuat layout web responsif</li>
+        <li>Menulis HTML & CSS yang rapi</li>
+        <li>Desain UI sederhana</li>
+      </ul>
+    </section>
+
+    <!-- Galeri Karya -->
+    <section id="karya" class="gallery">
+      <h2 style="text-align: center;">Galeri Karya</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="img/pppppp.png" alt="Website Toko Online">
+          <h4>Website Toko Online</h4>
+          <p>Desain homepage toko buku pakai CSS Flexbox.</p>
+        </div>
+        <div class="project">
+          <img src="img/screen.webp" alt="Aplikasi To-Do List">
+          <h4>Aplikasi To-Do List</h4>
+          <p>Proyek mini JavaScript untuk manajemen tugas harian.</p>
+        </div>
+        <div class="project">
+          <img src="img/copi.jpg" alt="Landing Page Kopi">
+          <h4>Landing Page Kopi</h4>
+          <p>Website promosi kedai kopi lokal dengan tema minimalis.</p>
+        </div>
+        <div class="project">
+          <img src="img/portofolio.png" alt="Portofolio Diri">
+          <h4>Portofolio Diri</h4>
+          <p>Halaman pribadi dengan HTML dan CSS murni.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="contact">
+      <h2>Kontak</h2>
+      <form>
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Pesan:</label>
+        <textarea name="pesan" rows="5" required></textarea>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <div class="sosmed">
+        <p>📷 Instagram: @rahmaddw</p>
+        <p>💻 GitHub: github.com/rahmaddw</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Rahmad Dhani Widi Anggoro. Hak cipta dilindungi.</p>
+    </footer>
+  </div>
+</body>
+</html>
